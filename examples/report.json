@@ -1,0 +1,648 @@
+{
+  "summary": "Prioritize 7 synthetic accounts for analyst review based on linked activity, transfer velocity and pass-through patterns. No account is accused, blocked or automatically closed; 0 explicit human review event(s) were applied in this local simulation.",
+  "metrics": [
+    {
+      "label": "Cases requiring review",
+      "value": 7,
+      "unit": "cases"
+    },
+    {
+      "label": "Directed activity cycles",
+      "value": 2,
+      "unit": "cycles"
+    },
+    {
+      "label": "Synthetic precision",
+      "value": 57.14,
+      "unit": "%"
+    },
+    {
+      "label": "Synthetic recall",
+      "value": 80.0,
+      "unit": "%"
+    }
+  ],
+  "evidence": [
+    "G1: 17 synthetic entities and 37 transactions form 3 connected components and 2 directed triangle(s).",
+    "G2: 7 accounts meet the configured priority threshold of 60/100. A priority score is a heuristic, not a probability of fraud.",
+    "CLEAR-A:velocity: 4 outgoing transfers in a rolling 60-minute window.",
+    "CLEAR-A:cycle: Participates in 1 directed three-account cycle(s). Cycles can also reflect legitimate treasury activity.",
+    "CLEAR-B:velocity: 4 outgoing transfers in a rolling 60-minute window.",
+    "CLEAR-B:cycle: Participates in 1 directed three-account cycle(s). Cycles can also reflect legitimate treasury activity.",
+    "CLEAR-C:velocity: 4 outgoing transfers in a rolling 60-minute window.",
+    "CLEAR-C:cycle: Participates in 1 directed three-account cycle(s). Cycles can also reflect legitimate treasury activity.",
+    "HUB:velocity: 4 outgoing transfers in a rolling 60-minute window.",
+    "HUB:pass-through: 4 distinct senders with 95.0% of inbound value sent onward within a one-day observation span; possible pass-through activity requires review.",
+    "RING-A:velocity: 4 outgoing transfers in a rolling 60-minute window.",
+    "RING-A:cycle: Participates in 1 directed three-account cycle(s). Cycles can also reflect legitimate treasury activity.",
+    "RING-B:velocity: 4 outgoing transfers in a rolling 60-minute window.",
+    "RING-B:cycle: Participates in 1 directed three-account cycle(s). Cycles can also reflect legitimate treasury activity.",
+    "RING-C:velocity: 4 outgoing transfers in a rolling 60-minute window.",
+    "RING-C:cycle: Participates in 1 directed three-account cycle(s). Cycles can also reflect legitimate treasury activity.",
+    "SALARY:velocity: 4 outgoing transfers in a rolling 60-minute window.",
+    "E1: Synthetic label evaluation: TP=4, FP=3, FN=1, TN=9. Labels are excluded from detection."
+  ],
+  "next_actions": [
+    "Review the cited transactions and legitimate business context before drawing a conclusion.",
+    "Inspect false positives and missed seeded cases; compare thresholds against analyst capacity.",
+    "Record a human rationale and evidence references for every case-state change."
+  ],
+  "details": {
+    "activity_revision": "9dd97fd7b59f3bcc",
+    "review_threshold": 60,
+    "entities": [
+      {
+        "entity_id": "HUB",
+        "priority_score": 75,
+        "review_required": true,
+        "inbound_amount": 1000.0,
+        "outbound_amount": 950.0,
+        "distinct_senders": 4,
+        "distinct_recipients": 4,
+        "max_outgoing_per_hour": 4,
+        "pass_through_ratio": 0.95,
+        "component_id": "component-2",
+        "indicators": [
+          {
+            "id": "HUB:velocity",
+            "points": 30,
+            "observation": "4 outgoing transfers in a rolling 60-minute window.",
+            "transaction_ids": [
+              "SYN-TX-026",
+              "SYN-TX-028",
+              "SYN-TX-030",
+              "SYN-TX-032"
+            ]
+          },
+          {
+            "id": "HUB:pass-through",
+            "points": 45,
+            "observation": "4 distinct senders with 95.0% of inbound value sent onward within a one-day observation span; possible pass-through activity requires review.",
+            "transaction_ids": [
+              "SYN-TX-025",
+              "SYN-TX-027",
+              "SYN-TX-029",
+              "SYN-TX-031",
+              "SYN-TX-026",
+              "SYN-TX-028",
+              "SYN-TX-030",
+              "SYN-TX-032"
+            ]
+          }
+        ]
+      },
+      {
+        "entity_id": "CLEAR-A",
+        "priority_score": 70,
+        "review_required": true,
+        "inbound_amount": 2000.0,
+        "outbound_amount": 2000.0,
+        "distinct_senders": 1,
+        "distinct_recipients": 1,
+        "max_outgoing_per_hour": 4,
+        "pass_through_ratio": 0.75,
+        "component_id": "component-1",
+        "indicators": [
+          {
+            "id": "CLEAR-A:velocity",
+            "points": 30,
+            "observation": "4 outgoing transfers in a rolling 60-minute window.",
+            "transaction_ids": [
+              "SYN-TX-013",
+              "SYN-TX-016",
+              "SYN-TX-019",
+              "SYN-TX-022"
+            ]
+          },
+          {
+            "id": "CLEAR-A:cycle",
+            "points": 40,
+            "observation": "Participates in 1 directed three-account cycle(s). Cycles can also reflect legitimate treasury activity.",
+            "cycle_ids": [
+              "cycle-1"
+            ]
+          }
+        ]
+      },
+      {
+        "entity_id": "CLEAR-B",
+        "priority_score": 70,
+        "review_required": true,
+        "inbound_amount": 2000.0,
+        "outbound_amount": 2000.0,
+        "distinct_senders": 1,
+        "distinct_recipients": 1,
+        "max_outgoing_per_hour": 4,
+        "pass_through_ratio": 1.0,
+        "component_id": "component-1",
+        "indicators": [
+          {
+            "id": "CLEAR-B:velocity",
+            "points": 30,
+            "observation": "4 outgoing transfers in a rolling 60-minute window.",
+            "transaction_ids": [
+              "SYN-TX-014",
+              "SYN-TX-017",
+              "SYN-TX-020",
+              "SYN-TX-023"
+            ]
+          },
+          {
+            "id": "CLEAR-B:cycle",
+            "points": 40,
+            "observation": "Participates in 1 directed three-account cycle(s). Cycles can also reflect legitimate treasury activity.",
+            "cycle_ids": [
+              "cycle-1"
+            ]
+          }
+        ]
+      },
+      {
+        "entity_id": "CLEAR-C",
+        "priority_score": 70,
+        "review_required": true,
+        "inbound_amount": 2000.0,
+        "outbound_amount": 2000.0,
+        "distinct_senders": 1,
+        "distinct_recipients": 1,
+        "max_outgoing_per_hour": 4,
+        "pass_through_ratio": 1.0,
+        "component_id": "component-1",
+        "indicators": [
+          {
+            "id": "CLEAR-C:velocity",
+            "points": 30,
+            "observation": "4 outgoing transfers in a rolling 60-minute window.",
+            "transaction_ids": [
+              "SYN-TX-015",
+              "SYN-TX-018",
+              "SYN-TX-021",
+              "SYN-TX-024"
+            ]
+          },
+          {
+            "id": "CLEAR-C:cycle",
+            "points": 40,
+            "observation": "Participates in 1 directed three-account cycle(s). Cycles can also reflect legitimate treasury activity.",
+            "cycle_ids": [
+              "cycle-1"
+            ]
+          }
+        ]
+      },
+      {
+        "entity_id": "RING-A",
+        "priority_score": 70,
+        "review_required": true,
+        "inbound_amount": 1000.0,
+        "outbound_amount": 1000.0,
+        "distinct_senders": 1,
+        "distinct_recipients": 1,
+        "max_outgoing_per_hour": 4,
+        "pass_through_ratio": 0.75,
+        "component_id": "component-3",
+        "indicators": [
+          {
+            "id": "RING-A:velocity",
+            "points": 30,
+            "observation": "4 outgoing transfers in a rolling 60-minute window.",
+            "transaction_ids": [
+              "SYN-TX-001",
+              "SYN-TX-004",
+              "SYN-TX-007",
+              "SYN-TX-010"
+            ]
+          },
+          {
+            "id": "RING-A:cycle",
+            "points": 40,
+            "observation": "Participates in 1 directed three-account cycle(s). Cycles can also reflect legitimate treasury activity.",
+            "cycle_ids": [
+              "cycle-2"
+            ]
+          }
+        ]
+      },
+      {
+        "entity_id": "RING-B",
+        "priority_score": 70,
+        "review_required": true,
+        "inbound_amount": 1000.0,
+        "outbound_amount": 1000.0,
+        "distinct_senders": 1,
+        "distinct_recipients": 1,
+        "max_outgoing_per_hour": 4,
+        "pass_through_ratio": 1.0,
+        "component_id": "component-3",
+        "indicators": [
+          {
+            "id": "RING-B:velocity",
+            "points": 30,
+            "observation": "4 outgoing transfers in a rolling 60-minute window.",
+            "transaction_ids": [
+              "SYN-TX-002",
+              "SYN-TX-005",
+              "SYN-TX-008",
+              "SYN-TX-011"
+            ]
+          },
+          {
+            "id": "RING-B:cycle",
+            "points": 40,
+            "observation": "Participates in 1 directed three-account cycle(s). Cycles can also reflect legitimate treasury activity.",
+            "cycle_ids": [
+              "cycle-2"
+            ]
+          }
+        ]
+      },
+      {
+        "entity_id": "RING-C",
+        "priority_score": 70,
+        "review_required": true,
+        "inbound_amount": 1000.0,
+        "outbound_amount": 1000.0,
+        "distinct_senders": 1,
+        "distinct_recipients": 1,
+        "max_outgoing_per_hour": 4,
+        "pass_through_ratio": 1.0,
+        "component_id": "component-3",
+        "indicators": [
+          {
+            "id": "RING-C:velocity",
+            "points": 30,
+            "observation": "4 outgoing transfers in a rolling 60-minute window.",
+            "transaction_ids": [
+              "SYN-TX-003",
+              "SYN-TX-006",
+              "SYN-TX-009",
+              "SYN-TX-012"
+            ]
+          },
+          {
+            "id": "RING-C:cycle",
+            "points": 40,
+            "observation": "Participates in 1 directed three-account cycle(s). Cycles can also reflect legitimate treasury activity.",
+            "cycle_ids": [
+              "cycle-2"
+            ]
+          }
+        ]
+      },
+      {
+        "entity_id": "SALARY",
+        "priority_score": 30,
+        "review_required": false,
+        "inbound_amount": 0.0,
+        "outbound_amount": 12000.0,
+        "distinct_senders": 0,
+        "distinct_recipients": 4,
+        "max_outgoing_per_hour": 4,
+        "pass_through_ratio": null,
+        "component_id": "component-2",
+        "indicators": [
+          {
+            "id": "SALARY:velocity",
+            "points": 30,
+            "observation": "4 outgoing transfers in a rolling 60-minute window.",
+            "transaction_ids": [
+              "SYN-TX-033",
+              "SYN-TX-034",
+              "SYN-TX-035",
+              "SYN-TX-036"
+            ]
+          }
+        ]
+      },
+      {
+        "entity_id": "DONOR-1",
+        "priority_score": 0,
+        "review_required": false,
+        "inbound_amount": 3000.0,
+        "outbound_amount": 250.0,
+        "distinct_senders": 1,
+        "distinct_recipients": 1,
+        "max_outgoing_per_hour": 1,
+        "pass_through_ratio": 0.0,
+        "component_id": "component-2",
+        "indicators": []
+      },
+      {
+        "entity_id": "DONOR-2",
+        "priority_score": 0,
+        "review_required": false,
+        "inbound_amount": 3000.0,
+        "outbound_amount": 250.0,
+        "distinct_senders": 1,
+        "distinct_recipients": 1,
+        "max_outgoing_per_hour": 1,
+        "pass_through_ratio": 0.0,
+        "component_id": "component-2",
+        "indicators": []
+      },
+      {
+        "entity_id": "DONOR-3",
+        "priority_score": 0,
+        "review_required": false,
+        "inbound_amount": 3000.0,
+        "outbound_amount": 250.0,
+        "distinct_senders": 1,
+        "distinct_recipients": 1,
+        "max_outgoing_per_hour": 1,
+        "pass_through_ratio": 0.0,
+        "component_id": "component-2",
+        "indicators": []
+      },
+      {
+        "entity_id": "DONOR-4",
+        "priority_score": 0,
+        "review_required": false,
+        "inbound_amount": 3000.0,
+        "outbound_amount": 250.0,
+        "distinct_senders": 1,
+        "distinct_recipients": 1,
+        "max_outgoing_per_hour": 1,
+        "pass_through_ratio": 0.0,
+        "component_id": "component-2",
+        "indicators": []
+      },
+      {
+        "entity_id": "SHOP-A",
+        "priority_score": 0,
+        "review_required": false,
+        "inbound_amount": 10137.5,
+        "outbound_amount": 0.0,
+        "distinct_senders": 2,
+        "distinct_recipients": 0,
+        "max_outgoing_per_hour": 0,
+        "pass_through_ratio": 0.0,
+        "component_id": "component-2",
+        "indicators": []
+      },
+      {
+        "entity_id": "SHOP-B",
+        "priority_score": 0,
+        "review_required": false,
+        "inbound_amount": 237.5,
+        "outbound_amount": 0.0,
+        "distinct_senders": 1,
+        "distinct_recipients": 0,
+        "max_outgoing_per_hour": 0,
+        "pass_through_ratio": 0.0,
+        "component_id": "component-2",
+        "indicators": []
+      },
+      {
+        "entity_id": "SHOP-C",
+        "priority_score": 0,
+        "review_required": false,
+        "inbound_amount": 237.5,
+        "outbound_amount": 0.0,
+        "distinct_senders": 1,
+        "distinct_recipients": 0,
+        "max_outgoing_per_hour": 0,
+        "pass_through_ratio": 0.0,
+        "component_id": "component-2",
+        "indicators": []
+      },
+      {
+        "entity_id": "SHOP-D",
+        "priority_score": 0,
+        "review_required": false,
+        "inbound_amount": 237.5,
+        "outbound_amount": 0.0,
+        "distinct_senders": 1,
+        "distinct_recipients": 0,
+        "max_outgoing_per_hour": 0,
+        "pass_through_ratio": 0.0,
+        "component_id": "component-2",
+        "indicators": []
+      },
+      {
+        "entity_id": "SINGLE",
+        "priority_score": 0,
+        "review_required": false,
+        "inbound_amount": 0.0,
+        "outbound_amount": 9900.0,
+        "distinct_senders": 0,
+        "distinct_recipients": 1,
+        "max_outgoing_per_hour": 1,
+        "pass_through_ratio": null,
+        "component_id": "component-2",
+        "indicators": []
+      }
+    ],
+    "edges": [
+      {
+        "from": "CLEAR-A",
+        "to": "CLEAR-B",
+        "transaction_count": 4,
+        "total_amount": 2000.0
+      },
+      {
+        "from": "CLEAR-B",
+        "to": "CLEAR-C",
+        "transaction_count": 4,
+        "total_amount": 2000.0
+      },
+      {
+        "from": "CLEAR-C",
+        "to": "CLEAR-A",
+        "transaction_count": 4,
+        "total_amount": 2000.0
+      },
+      {
+        "from": "DONOR-1",
+        "to": "HUB",
+        "transaction_count": 1,
+        "total_amount": 250.0
+      },
+      {
+        "from": "DONOR-2",
+        "to": "HUB",
+        "transaction_count": 1,
+        "total_amount": 250.0
+      },
+      {
+        "from": "DONOR-3",
+        "to": "HUB",
+        "transaction_count": 1,
+        "total_amount": 250.0
+      },
+      {
+        "from": "DONOR-4",
+        "to": "HUB",
+        "transaction_count": 1,
+        "total_amount": 250.0
+      },
+      {
+        "from": "HUB",
+        "to": "SHOP-A",
+        "transaction_count": 1,
+        "total_amount": 237.5
+      },
+      {
+        "from": "HUB",
+        "to": "SHOP-B",
+        "transaction_count": 1,
+        "total_amount": 237.5
+      },
+      {
+        "from": "HUB",
+        "to": "SHOP-C",
+        "transaction_count": 1,
+        "total_amount": 237.5
+      },
+      {
+        "from": "HUB",
+        "to": "SHOP-D",
+        "transaction_count": 1,
+        "total_amount": 237.5
+      },
+      {
+        "from": "RING-A",
+        "to": "RING-B",
+        "transaction_count": 4,
+        "total_amount": 1000.0
+      },
+      {
+        "from": "RING-B",
+        "to": "RING-C",
+        "transaction_count": 4,
+        "total_amount": 1000.0
+      },
+      {
+        "from": "RING-C",
+        "to": "RING-A",
+        "transaction_count": 4,
+        "total_amount": 1000.0
+      },
+      {
+        "from": "SALARY",
+        "to": "DONOR-1",
+        "transaction_count": 1,
+        "total_amount": 3000.0
+      },
+      {
+        "from": "SALARY",
+        "to": "DONOR-2",
+        "transaction_count": 1,
+        "total_amount": 3000.0
+      },
+      {
+        "from": "SALARY",
+        "to": "DONOR-3",
+        "transaction_count": 1,
+        "total_amount": 3000.0
+      },
+      {
+        "from": "SALARY",
+        "to": "DONOR-4",
+        "transaction_count": 1,
+        "total_amount": 3000.0
+      },
+      {
+        "from": "SINGLE",
+        "to": "SHOP-A",
+        "transaction_count": 1,
+        "total_amount": 9900.0
+      }
+    ],
+    "components": [
+      {
+        "id": "component-1",
+        "entities": [
+          "CLEAR-A",
+          "CLEAR-B",
+          "CLEAR-C"
+        ]
+      },
+      {
+        "id": "component-2",
+        "entities": [
+          "DONOR-1",
+          "DONOR-2",
+          "DONOR-3",
+          "DONOR-4",
+          "HUB",
+          "SALARY",
+          "SHOP-A",
+          "SHOP-B",
+          "SHOP-C",
+          "SHOP-D",
+          "SINGLE"
+        ]
+      },
+      {
+        "id": "component-3",
+        "entities": [
+          "RING-A",
+          "RING-B",
+          "RING-C"
+        ]
+      }
+    ],
+    "cycles": [
+      {
+        "id": "cycle-1",
+        "entities": [
+          "CLEAR-A",
+          "CLEAR-B",
+          "CLEAR-C",
+          "CLEAR-A"
+        ]
+      },
+      {
+        "id": "cycle-2",
+        "entities": [
+          "RING-A",
+          "RING-B",
+          "RING-C",
+          "RING-A"
+        ]
+      }
+    ],
+    "evaluation": {
+      "available": true,
+      "true_positives": 4,
+      "false_positives": 3,
+      "false_negatives": 1,
+      "true_negatives": 9,
+      "precision": 0.5714285714285714,
+      "recall": 0.8,
+      "false_positive_entities": [
+        "CLEAR-A",
+        "CLEAR-B",
+        "CLEAR-C"
+      ],
+      "missed_seeded_entities": [
+        "SINGLE"
+      ],
+      "note": "Evaluation against original synthetic seeded labels. Labels are excluded from feature computation. This is not estimated real-world fraud-detection performance."
+    },
+    "case_states": {
+      "CLEAR-A": "new",
+      "CLEAR-B": "new",
+      "CLEAR-C": "new",
+      "HUB": "new",
+      "RING-A": "new",
+      "RING-B": "new",
+      "RING-C": "new"
+    },
+    "review_audit": [],
+    "model_used": false,
+    "model_summaries": [],
+    "limits": "Rule-based graph indicators, not a learned fraud classifier. No protected traits are accepted. Case reviews and reviewer identity are caller-supplied simulations; no account or external case system is modified."
+  },
+  "provenance": {
+    "project_id": "fraud_investigation_workbench",
+    "executed_at": "2026-09-17T05:01:58.239293+00:00",
+    "mode": "local",
+    "model_calls": [],
+    "elapsed_ms": 0.454,
+    "input_sha256": "68844a5fc24e4b5fd9de10ee4488a5ecb6f7e8502aaefd10d04292e8522d414c",
+    "source_sha256": "13de44f2cb6586bf85624deb13cd6185e3848d24fe939c6f978ed68fb0b4a110",
+    "data_classification": "original synthetic fixture",
+    "scope": "Reference application run; not a production benchmark or employer result"
+  }
+}

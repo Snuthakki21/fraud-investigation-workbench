@@ -1,0 +1,354 @@
+{
+  "entities": [
+    {
+      "id": "RING-A",
+      "kind": "account"
+    },
+    {
+      "id": "RING-B",
+      "kind": "account"
+    },
+    {
+      "id": "RING-C",
+      "kind": "account"
+    },
+    {
+      "id": "CLEAR-A",
+      "kind": "treasury"
+    },
+    {
+      "id": "CLEAR-B",
+      "kind": "treasury"
+    },
+    {
+      "id": "CLEAR-C",
+      "kind": "treasury"
+    },
+    {
+      "id": "HUB",
+      "kind": "account"
+    },
+    {
+      "id": "DONOR-1",
+      "kind": "account"
+    },
+    {
+      "id": "DONOR-2",
+      "kind": "account"
+    },
+    {
+      "id": "DONOR-3",
+      "kind": "account"
+    },
+    {
+      "id": "DONOR-4",
+      "kind": "account"
+    },
+    {
+      "id": "SHOP-A",
+      "kind": "merchant"
+    },
+    {
+      "id": "SHOP-B",
+      "kind": "merchant"
+    },
+    {
+      "id": "SHOP-C",
+      "kind": "merchant"
+    },
+    {
+      "id": "SHOP-D",
+      "kind": "merchant"
+    },
+    {
+      "id": "SINGLE",
+      "kind": "account"
+    },
+    {
+      "id": "SALARY",
+      "kind": "treasury"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "SYN-TX-001",
+      "from": "RING-A",
+      "to": "RING-B",
+      "amount": 250,
+      "timestamp": "2026-09-01T09:00:00Z"
+    },
+    {
+      "id": "SYN-TX-002",
+      "from": "RING-B",
+      "to": "RING-C",
+      "amount": 250,
+      "timestamp": "2026-09-01T09:01:00Z"
+    },
+    {
+      "id": "SYN-TX-003",
+      "from": "RING-C",
+      "to": "RING-A",
+      "amount": 250,
+      "timestamp": "2026-09-01T09:02:00Z"
+    },
+    {
+      "id": "SYN-TX-004",
+      "from": "RING-A",
+      "to": "RING-B",
+      "amount": 250,
+      "timestamp": "2026-09-01T09:10:00Z"
+    },
+    {
+      "id": "SYN-TX-005",
+      "from": "RING-B",
+      "to": "RING-C",
+      "amount": 250,
+      "timestamp": "2026-09-01T09:11:00Z"
+    },
+    {
+      "id": "SYN-TX-006",
+      "from": "RING-C",
+      "to": "RING-A",
+      "amount": 250,
+      "timestamp": "2026-09-01T09:12:00Z"
+    },
+    {
+      "id": "SYN-TX-007",
+      "from": "RING-A",
+      "to": "RING-B",
+      "amount": 250,
+      "timestamp": "2026-09-01T09:20:00Z"
+    },
+    {
+      "id": "SYN-TX-008",
+      "from": "RING-B",
+      "to": "RING-C",
+      "amount": 250,
+      "timestamp": "2026-09-01T09:21:00Z"
+    },
+    {
+      "id": "SYN-TX-009",
+      "from": "RING-C",
+      "to": "RING-A",
+      "amount": 250,
+      "timestamp": "2026-09-01T09:22:00Z"
+    },
+    {
+      "id": "SYN-TX-010",
+      "from": "RING-A",
+      "to": "RING-B",
+      "amount": 250,
+      "timestamp": "2026-09-01T09:30:00Z"
+    },
+    {
+      "id": "SYN-TX-011",
+      "from": "RING-B",
+      "to": "RING-C",
+      "amount": 250,
+      "timestamp": "2026-09-01T09:31:00Z"
+    },
+    {
+      "id": "SYN-TX-012",
+      "from": "RING-C",
+      "to": "RING-A",
+      "amount": 250,
+      "timestamp": "2026-09-01T09:32:00Z"
+    },
+    {
+      "id": "SYN-TX-013",
+      "from": "CLEAR-A",
+      "to": "CLEAR-B",
+      "amount": 500,
+      "timestamp": "2026-09-01T09:00:00Z"
+    },
+    {
+      "id": "SYN-TX-014",
+      "from": "CLEAR-B",
+      "to": "CLEAR-C",
+      "amount": 500,
+      "timestamp": "2026-09-01T09:01:00Z"
+    },
+    {
+      "id": "SYN-TX-015",
+      "from": "CLEAR-C",
+      "to": "CLEAR-A",
+      "amount": 500,
+      "timestamp": "2026-09-01T09:02:00Z"
+    },
+    {
+      "id": "SYN-TX-016",
+      "from": "CLEAR-A",
+      "to": "CLEAR-B",
+      "amount": 500,
+      "timestamp": "2026-09-01T09:10:00Z"
+    },
+    {
+      "id": "SYN-TX-017",
+      "from": "CLEAR-B",
+      "to": "CLEAR-C",
+      "amount": 500,
+      "timestamp": "2026-09-01T09:11:00Z"
+    },
+    {
+      "id": "SYN-TX-018",
+      "from": "CLEAR-C",
+      "to": "CLEAR-A",
+      "amount": 500,
+      "timestamp": "2026-09-01T09:12:00Z"
+    },
+    {
+      "id": "SYN-TX-019",
+      "from": "CLEAR-A",
+      "to": "CLEAR-B",
+      "amount": 500,
+      "timestamp": "2026-09-01T09:20:00Z"
+    },
+    {
+      "id": "SYN-TX-020",
+      "from": "CLEAR-B",
+      "to": "CLEAR-C",
+      "amount": 500,
+      "timestamp": "2026-09-01T09:21:00Z"
+    },
+    {
+      "id": "SYN-TX-021",
+      "from": "CLEAR-C",
+      "to": "CLEAR-A",
+      "amount": 500,
+      "timestamp": "2026-09-01T09:22:00Z"
+    },
+    {
+      "id": "SYN-TX-022",
+      "from": "CLEAR-A",
+      "to": "CLEAR-B",
+      "amount": 500,
+      "timestamp": "2026-09-01T09:30:00Z"
+    },
+    {
+      "id": "SYN-TX-023",
+      "from": "CLEAR-B",
+      "to": "CLEAR-C",
+      "amount": 500,
+      "timestamp": "2026-09-01T09:31:00Z"
+    },
+    {
+      "id": "SYN-TX-024",
+      "from": "CLEAR-C",
+      "to": "CLEAR-A",
+      "amount": 500,
+      "timestamp": "2026-09-01T09:32:00Z"
+    },
+    {
+      "id": "SYN-TX-025",
+      "from": "DONOR-1",
+      "to": "HUB",
+      "amount": 250,
+      "timestamp": "2026-09-01T09:00:00Z"
+    },
+    {
+      "id": "SYN-TX-026",
+      "from": "HUB",
+      "to": "SHOP-A",
+      "amount": 237.5,
+      "timestamp": "2026-09-01T09:10:00Z"
+    },
+    {
+      "id": "SYN-TX-027",
+      "from": "DONOR-2",
+      "to": "HUB",
+      "amount": 250,
+      "timestamp": "2026-09-01T09:02:00Z"
+    },
+    {
+      "id": "SYN-TX-028",
+      "from": "HUB",
+      "to": "SHOP-B",
+      "amount": 237.5,
+      "timestamp": "2026-09-01T09:13:00Z"
+    },
+    {
+      "id": "SYN-TX-029",
+      "from": "DONOR-3",
+      "to": "HUB",
+      "amount": 250,
+      "timestamp": "2026-09-01T09:04:00Z"
+    },
+    {
+      "id": "SYN-TX-030",
+      "from": "HUB",
+      "to": "SHOP-C",
+      "amount": 237.5,
+      "timestamp": "2026-09-01T09:16:00Z"
+    },
+    {
+      "id": "SYN-TX-031",
+      "from": "DONOR-4",
+      "to": "HUB",
+      "amount": 250,
+      "timestamp": "2026-09-01T09:06:00Z"
+    },
+    {
+      "id": "SYN-TX-032",
+      "from": "HUB",
+      "to": "SHOP-D",
+      "amount": 237.5,
+      "timestamp": "2026-09-01T09:19:00Z"
+    },
+    {
+      "id": "SYN-TX-033",
+      "from": "SALARY",
+      "to": "DONOR-1",
+      "amount": 3000,
+      "timestamp": "2026-09-01T10:00:00Z"
+    },
+    {
+      "id": "SYN-TX-034",
+      "from": "SALARY",
+      "to": "DONOR-2",
+      "amount": 3000,
+      "timestamp": "2026-09-01T10:01:00Z"
+    },
+    {
+      "id": "SYN-TX-035",
+      "from": "SALARY",
+      "to": "DONOR-3",
+      "amount": 3000,
+      "timestamp": "2026-09-01T10:02:00Z"
+    },
+    {
+      "id": "SYN-TX-036",
+      "from": "SALARY",
+      "to": "DONOR-4",
+      "amount": 3000,
+      "timestamp": "2026-09-01T10:03:00Z"
+    },
+    {
+      "id": "SYN-TX-037",
+      "from": "SINGLE",
+      "to": "SHOP-A",
+      "amount": 9900,
+      "timestamp": "2026-09-01T11:00:00Z"
+    }
+  ],
+  "review_threshold": 60,
+  "case_reviews": [],
+  "ground_truth": {
+    "RING-A": true,
+    "RING-B": true,
+    "RING-C": true,
+    "CLEAR-A": false,
+    "CLEAR-B": false,
+    "CLEAR-C": false,
+    "HUB": true,
+    "DONOR-1": false,
+    "DONOR-2": false,
+    "DONOR-3": false,
+    "DONOR-4": false,
+    "SHOP-A": false,
+    "SHOP-B": false,
+    "SHOP-C": false,
+    "SHOP-D": false,
+    "SINGLE": true,
+    "SALARY": false
+  }
+}
