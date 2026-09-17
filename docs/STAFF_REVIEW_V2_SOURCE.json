@@ -1,0 +1,19 @@
+{
+  "scope": "expanded product domain/application/AI source and domain template; shared platform excluded",
+  "files": {
+    "app/ai/__init__.py": "febc8c22c5f8d21d4e1dc3f8681b00e611da879a9bb0e9b64f0c58081cff53bc",
+    "app/ai/evaluation.py": "1a4797ce9c118c28f3e7218f813d8bb225ffa292fd1c33ccdbefea1cc3897369",
+    "app/ai/model.py": "98d659b37bd229f97d2a6a7e54492bebd6d77e17cac1a53618cb53e959ed45d3",
+    "app/ai/narrative.py": "d95605ec87e5c682ec2ff62e700eeb34f010f48d345e4abe507f745f1f6f02c0",
+    "app/application/__init__.py": "febc8c22c5f8d21d4e1dc3f8681b00e611da879a9bb0e9b64f0c58081cff53bc",
+    "app/application/product.py": "0bfe6f36f9c2fae7395add9cc39aa83bbc42b45b03b13a65f02d0e6146645ed6",
+    "app/domain/__init__.py": "febc8c22c5f8d21d4e1dc3f8681b00e611da879a9bb0e9b64f0c58081cff53bc",
+    "app/domain/cases.py": "bb595d775c691e1b43e3dc385bd4c62ba3e541311b642dc299b3e5cbbf0fb791",
+    "app/domain/entities.py": "81a987a06799b1bac904607d2fd99a2fc2627ad21d9a17828bbb17c72f63949b",
+    "app/domain/features.py": "688a27d1910aa026b7702c648002f4bd3b755dc020450de7b0d5622eec3e233c",
+    "app/domain/graph.py": "6c29702c302e943f9e4e4dcbd476df9f9c995b393ae292b5b17243f0b0572cdc",
+    "app/domain/policies.py": "a5ae3c486f197be4b68fe6b5c18f099f875c8522b8db08939aef3d0fd5be4e78",
+    "projects/fraud_investigation_workbench/project.py": "ca8ef7e840f4e3c06b40669b7bf63b19afdeebb4e83209ca503675fec82d73eb",
+    "web/templates/fraud_investigation_workbench.js": "8ae5bb3a4cadb18b7739823431c97e2d380762b5211e08fba85bde5bb26b4e3f"
+  }
+}

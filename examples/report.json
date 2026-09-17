@@ -632,17 +632,584 @@
     "review_audit": [],
     "model_used": false,
     "model_summaries": [],
-    "limits": "Rule-based graph indicators, not a learned fraud classifier. No protected traits are accepted. Case reviews and reviewer identity are caller-supplied simulations; no account or external case system is modified."
+    "behavioral_model": {
+      "available": true,
+      "algorithm": "L2-regularized logistic regression",
+      "split": {
+        "train": {
+          "samples": 48,
+          "ids": [
+            "history-001",
+            "history-002",
+            "history-003",
+            "history-004",
+            "history-005",
+            "history-006",
+            "history-007",
+            "history-008",
+            "history-009",
+            "history-010",
+            "history-011",
+            "history-012",
+            "history-013",
+            "history-014",
+            "history-015",
+            "history-016",
+            "history-017",
+            "history-018",
+            "history-019",
+            "history-020",
+            "history-021",
+            "history-022",
+            "history-023",
+            "history-024",
+            "history-025",
+            "history-026",
+            "history-027",
+            "history-028",
+            "history-029",
+            "history-030",
+            "history-031",
+            "history-032",
+            "history-033",
+            "history-034",
+            "history-035",
+            "history-036",
+            "history-037",
+            "history-038",
+            "history-039",
+            "history-040",
+            "history-041",
+            "history-042",
+            "history-043",
+            "history-044",
+            "history-045",
+            "history-046",
+            "history-047",
+            "history-048"
+          ],
+          "first_timestamp": "2026-01-01T00:00:00+00:00",
+          "last_timestamp": "2026-02-17T00:00:00+00:00",
+          "positives": 31
+        },
+        "validation": {
+          "samples": 16,
+          "ids": [
+            "history-049",
+            "history-050",
+            "history-051",
+            "history-052",
+            "history-053",
+            "history-054",
+            "history-055",
+            "history-056",
+            "history-057",
+            "history-058",
+            "history-059",
+            "history-060",
+            "history-061",
+            "history-062",
+            "history-063",
+            "history-064"
+          ],
+          "first_timestamp": "2026-02-18T00:00:00+00:00",
+          "last_timestamp": "2026-03-05T00:00:00+00:00",
+          "positives": 9
+        },
+        "test": {
+          "samples": 16,
+          "ids": [
+            "history-065",
+            "history-066",
+            "history-067",
+            "history-068",
+            "history-069",
+            "history-070",
+            "history-071",
+            "history-072",
+            "history-073",
+            "history-074",
+            "history-075",
+            "history-076",
+            "history-077",
+            "history-078",
+            "history-079",
+            "history-080"
+          ],
+          "first_timestamp": "2026-03-06T00:00:00+00:00",
+          "last_timestamp": "2026-03-21T00:00:00+00:00",
+          "positives": 8
+        }
+      },
+      "artifact": {
+        "feature_order": [
+          "velocity",
+          "fan_in",
+          "fan_out",
+          "pass_through",
+          "cycle_count"
+        ],
+        "means": [
+          5.625,
+          3.4791666666666665,
+          3.7708333333333335,
+          0.8349375,
+          1.625
+        ],
+        "scales": [
+          3.2890284786443145,
+          2.3628159694643074,
+          2.2660500080291452,
+          0.4585900677734055,
+          1.1836560592784826
+        ],
+        "weights": [
+          0.8327883854037968,
+          0.4884217732463899,
+          0.32341329993528856,
+          -0.11643268034657603,
+          0.5659084390146957
+        ],
+        "intercept": 0.7269882080165222,
+        "threshold": 0.7,
+        "sha256": "a1b5e0c019fd48e6323f521916b4fb5b768c79bd48742dcc8e7f0be4a8de672d"
+      },
+      "validation_threshold_curve": [
+        {
+          "threshold": 0.2,
+          "samples": 16,
+          "true_positives": 9,
+          "false_positives": 7,
+          "false_negatives": 0,
+          "true_negatives": 0,
+          "precision": 0.5625,
+          "recall": 1.0,
+          "f1": 0.72,
+          "brier_score": 0.15491363740117045
+        },
+        {
+          "threshold": 0.3,
+          "samples": 16,
+          "true_positives": 9,
+          "false_positives": 6,
+          "false_negatives": 0,
+          "true_negatives": 1,
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1": 0.7499999999999999,
+          "brier_score": 0.15491363740117045
+        },
+        {
+          "threshold": 0.4,
+          "samples": 16,
+          "true_positives": 9,
+          "false_positives": 4,
+          "false_negatives": 0,
+          "true_negatives": 3,
+          "precision": 0.6923076923076923,
+          "recall": 1.0,
+          "f1": 0.8181818181818181,
+          "brier_score": 0.15491363740117045
+        },
+        {
+          "threshold": 0.5,
+          "samples": 16,
+          "true_positives": 9,
+          "false_positives": 3,
+          "false_negatives": 0,
+          "true_negatives": 4,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "brier_score": 0.15491363740117045
+        },
+        {
+          "threshold": 0.6,
+          "samples": 16,
+          "true_positives": 7,
+          "false_positives": 2,
+          "false_negatives": 2,
+          "true_negatives": 5,
+          "precision": 0.7777777777777778,
+          "recall": 0.7777777777777778,
+          "f1": 0.7777777777777778,
+          "brier_score": 0.15491363740117045
+        },
+        {
+          "threshold": 0.7,
+          "samples": 16,
+          "true_positives": 7,
+          "false_positives": 0,
+          "false_negatives": 2,
+          "true_negatives": 7,
+          "precision": 1.0,
+          "recall": 0.7777777777777778,
+          "f1": 0.8750000000000001,
+          "brier_score": 0.15491363740117045
+        },
+        {
+          "threshold": 0.8,
+          "samples": 16,
+          "true_positives": 3,
+          "false_positives": 0,
+          "false_negatives": 6,
+          "true_negatives": 7,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5,
+          "brier_score": 0.15491363740117045
+        }
+      ],
+      "held_out_test": {
+        "threshold": 0.7,
+        "samples": 16,
+        "true_positives": 6,
+        "false_positives": 2,
+        "false_negatives": 2,
+        "true_negatives": 6,
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75,
+        "brier_score": 0.22828060759973093
+      },
+      "entity_scores": [
+        {
+          "entity_id": "HUB",
+          "model_score": 0.413328,
+          "above_model_threshold": false,
+          "contributions": {
+            "velocity": -0.411453,
+            "fan_in": 0.107662,
+            "fan_out": 0.032707,
+            "pass_through": -0.029214,
+            "cycle_count": -0.776916
+          },
+          "intercept": 0.7269882080165222
+        },
+        {
+          "entity_id": "CLEAR-A",
+          "model_score": 0.295329,
+          "above_model_threshold": false,
+          "contributions": {
+            "velocity": -0.411453,
+            "fan_in": -0.512473,
+            "fan_out": -0.395457,
+            "pass_through": 0.021565,
+            "cycle_count": -0.298814
+          },
+          "intercept": 0.7269882080165222
+        },
+        {
+          "entity_id": "RING-A",
+          "model_score": 0.295329,
+          "above_model_threshold": false,
+          "contributions": {
+            "velocity": -0.411453,
+            "fan_in": -0.512473,
+            "fan_out": -0.395457,
+            "pass_through": 0.021565,
+            "cycle_count": -0.298814
+          },
+          "intercept": 0.7269882080165222
+        },
+        {
+          "entity_id": "CLEAR-B",
+          "model_score": 0.282293,
+          "above_model_threshold": false,
+          "contributions": {
+            "velocity": -0.411453,
+            "fan_in": -0.512473,
+            "fan_out": -0.395457,
+            "pass_through": -0.041908,
+            "cycle_count": -0.298814
+          },
+          "intercept": 0.7269882080165222
+        },
+        {
+          "entity_id": "CLEAR-C",
+          "model_score": 0.282293,
+          "above_model_threshold": false,
+          "contributions": {
+            "velocity": -0.411453,
+            "fan_in": -0.512473,
+            "fan_out": -0.395457,
+            "pass_through": -0.041908,
+            "cycle_count": -0.298814
+          },
+          "intercept": 0.7269882080165222
+        },
+        {
+          "entity_id": "RING-B",
+          "model_score": 0.282293,
+          "above_model_threshold": false,
+          "contributions": {
+            "velocity": -0.411453,
+            "fan_in": -0.512473,
+            "fan_out": -0.395457,
+            "pass_through": -0.041908,
+            "cycle_count": -0.298814
+          },
+          "intercept": 0.7269882080165222
+        },
+        {
+          "entity_id": "RING-C",
+          "model_score": 0.282293,
+          "above_model_threshold": false,
+          "contributions": {
+            "velocity": -0.411453,
+            "fan_in": -0.512473,
+            "fan_out": -0.395457,
+            "pass_through": -0.041908,
+            "cycle_count": -0.298814
+          },
+          "intercept": 0.7269882080165222
+        },
+        {
+          "entity_id": "SALARY",
+          "model_score": 0.281735,
+          "above_model_threshold": false,
+          "contributions": {
+            "velocity": -0.411453,
+            "fan_in": -0.719185,
+            "fan_out": 0.032707,
+            "pass_through": 0.211985,
+            "cycle_count": -0.776916
+          },
+          "intercept": 0.7269882080165222
+        },
+        {
+          "entity_id": "DONOR-1",
+          "model_score": 0.128204,
+          "above_model_threshold": false,
+          "contributions": {
+            "velocity": -1.171059,
+            "fan_in": -0.512473,
+            "fan_out": -0.395457,
+            "pass_through": 0.211985,
+            "cycle_count": -0.776916
+          },
+          "intercept": 0.7269882080165222
+        },
+        {
+          "entity_id": "DONOR-2",
+          "model_score": 0.128204,
+          "above_model_threshold": false,
+          "contributions": {
+            "velocity": -1.171059,
+            "fan_in": -0.512473,
+            "fan_out": -0.395457,
+            "pass_through": 0.211985,
+            "cycle_count": -0.776916
+          },
+          "intercept": 0.7269882080165222
+        },
+        {
+          "entity_id": "DONOR-3",
+          "model_score": 0.128204,
+          "above_model_threshold": false,
+          "contributions": {
+            "velocity": -1.171059,
+            "fan_in": -0.512473,
+            "fan_out": -0.395457,
+            "pass_through": 0.211985,
+            "cycle_count": -0.776916
+          },
+          "intercept": 0.7269882080165222
+        },
+        {
+          "entity_id": "DONOR-4",
+          "model_score": 0.128204,
+          "above_model_threshold": false,
+          "contributions": {
+            "velocity": -1.171059,
+            "fan_in": -0.512473,
+            "fan_out": -0.395457,
+            "pass_through": 0.211985,
+            "cycle_count": -0.776916
+          },
+          "intercept": 0.7269882080165222
+        },
+        {
+          "entity_id": "SHOP-A",
+          "model_score": 0.108501,
+          "above_model_threshold": false,
+          "contributions": {
+            "velocity": -1.424261,
+            "fan_in": -0.305761,
+            "fan_out": -0.538178,
+            "pass_through": 0.211985,
+            "cycle_count": -0.776916
+          },
+          "intercept": 0.7269882080165222
+        },
+        {
+          "entity_id": "SINGLE",
+          "model_score": 0.10682,
+          "above_model_threshold": false,
+          "contributions": {
+            "velocity": -1.171059,
+            "fan_in": -0.719185,
+            "fan_out": -0.395457,
+            "pass_through": 0.211985,
+            "cycle_count": -0.776916
+          },
+          "intercept": 0.7269882080165222
+        },
+        {
+          "entity_id": "SHOP-B",
+          "model_score": 0.090064,
+          "above_model_threshold": false,
+          "contributions": {
+            "velocity": -1.424261,
+            "fan_in": -0.512473,
+            "fan_out": -0.538178,
+            "pass_through": 0.211985,
+            "cycle_count": -0.776916
+          },
+          "intercept": 0.7269882080165222
+        },
+        {
+          "entity_id": "SHOP-C",
+          "model_score": 0.090064,
+          "above_model_threshold": false,
+          "contributions": {
+            "velocity": -1.424261,
+            "fan_in": -0.512473,
+            "fan_out": -0.538178,
+            "pass_through": 0.211985,
+            "cycle_count": -0.776916
+          },
+          "intercept": 0.7269882080165222
+        },
+        {
+          "entity_id": "SHOP-D",
+          "model_score": 0.090064,
+          "above_model_threshold": false,
+          "contributions": {
+            "velocity": -1.424261,
+            "fan_in": -0.512473,
+            "fan_out": -0.538178,
+            "pass_through": 0.211985,
+            "cycle_count": -0.776916
+          },
+          "intercept": 0.7269882080165222
+        }
+      ],
+      "note": "Scaling and coefficients use training rows only. Threshold selection uses validation only. Test labels affect only held-out metrics. Model scores rank synthetic activity; they are uncalibrated and never modify rule-based review states, declare fraud or trigger account actions."
+    },
+    "threshold_comparison": [
+      {
+        "threshold": 25,
+        "queue_size": 8,
+        "available": true,
+        "true_positives": 4,
+        "false_positives": 4,
+        "false_negatives": 1,
+        "true_negatives": 8,
+        "precision": 0.5,
+        "recall": 0.8,
+        "false_positive_entities": [
+          "CLEAR-A",
+          "CLEAR-B",
+          "CLEAR-C",
+          "SALARY"
+        ],
+        "missed_seeded_entities": [
+          "SINGLE"
+        ],
+        "note": "Evaluation against original synthetic seeded labels. Labels are excluded from feature computation. This is not estimated real-world fraud-detection performance."
+      },
+      {
+        "threshold": 40,
+        "queue_size": 7,
+        "available": true,
+        "true_positives": 4,
+        "false_positives": 3,
+        "false_negatives": 1,
+        "true_negatives": 9,
+        "precision": 0.5714285714285714,
+        "recall": 0.8,
+        "false_positive_entities": [
+          "CLEAR-A",
+          "CLEAR-B",
+          "CLEAR-C"
+        ],
+        "missed_seeded_entities": [
+          "SINGLE"
+        ],
+        "note": "Evaluation against original synthetic seeded labels. Labels are excluded from feature computation. This is not estimated real-world fraud-detection performance."
+      },
+      {
+        "threshold": 60,
+        "queue_size": 7,
+        "available": true,
+        "true_positives": 4,
+        "false_positives": 3,
+        "false_negatives": 1,
+        "true_negatives": 9,
+        "precision": 0.5714285714285714,
+        "recall": 0.8,
+        "false_positive_entities": [
+          "CLEAR-A",
+          "CLEAR-B",
+          "CLEAR-C"
+        ],
+        "missed_seeded_entities": [
+          "SINGLE"
+        ],
+        "note": "Evaluation against original synthetic seeded labels. Labels are excluded from feature computation. This is not estimated real-world fraud-detection performance."
+      },
+      {
+        "threshold": 75,
+        "queue_size": 1,
+        "available": true,
+        "true_positives": 1,
+        "false_positives": 0,
+        "false_negatives": 4,
+        "true_negatives": 12,
+        "precision": 1.0,
+        "recall": 0.2,
+        "false_positive_entities": [],
+        "missed_seeded_entities": [
+          "RING-A",
+          "RING-B",
+          "RING-C",
+          "SINGLE"
+        ],
+        "note": "Evaluation against original synthetic seeded labels. Labels are excluded from feature computation. This is not estimated real-world fraud-detection performance."
+      },
+      {
+        "threshold": 90,
+        "queue_size": 0,
+        "available": true,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 5,
+        "true_negatives": 12,
+        "precision": null,
+        "recall": 0.0,
+        "false_positive_entities": [],
+        "missed_seeded_entities": [
+          "HUB",
+          "RING-A",
+          "RING-B",
+          "RING-C",
+          "SINGLE"
+        ],
+        "note": "Evaluation against original synthetic seeded labels. Labels are excluded from feature computation. This is not estimated real-world fraud-detection performance."
+      }
+    ],
+    "limits": "Rule-based graph indicators plus an optional separately trained synthetic behavioral classifier. No protected traits are accepted. Case reviews and reviewer identity are caller-supplied simulations; no account or external case system is modified."
   },
   "provenance": {
     "project_id": "fraud_investigation_workbench",
-    "executed_at": "2026-09-17T05:01:58.239293+00:00",
+    "executed_at": "2026-09-17T06:11:55.027966+00:00",
     "mode": "local",
     "model_calls": [],
-    "elapsed_ms": 0.454,
-    "input_sha256": "68844a5fc24e4b5fd9de10ee4488a5ecb6f7e8502aaefd10d04292e8522d414c",
-    "source_sha256": "13de44f2cb6586bf85624deb13cd6185e3848d24fe939c6f978ed68fb0b4a110",
-    "data_classification": "original synthetic fixture",
+    "elapsed_ms": 12.389,
+    "input_sha256": "43de5187e84eee84cf4c5c26ddf7d9025614733b8275f0d79c0c6c47049607b0",
+    "source_sha256": "a7df36e28f321b36685e21b81a943a55b2b7dd15e95b45adc940943f67ae1296",
+    "data_classification": "user supplied input",
     "scope": "Reference application run; not a production benchmark or employer result"
   }
 }

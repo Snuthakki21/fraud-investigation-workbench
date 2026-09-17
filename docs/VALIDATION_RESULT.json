@@ -1,0 +1,57 @@
+{
+  "repo": "fraud-investigation-workbench",
+  "project_id": "fraud_investigation_workbench",
+  "title": "Fraud Investigation Workbench",
+  "coverage": 98.20089955022489,
+  "python_tests": 154,
+  "frontend_passed": 53,
+  "examples": 4,
+  "release": "2.0.0",
+  "python_skipped": 2,
+  "frontend_skipped": 4,
+  "browser": {
+    "repo": "fraud-investigation-workbench",
+    "fresh": true,
+    "history": true,
+    "branded": true,
+    "title": "Fraud Investigation Workbench"
+  },
+  "mobile": {
+    "repo": "fraud-investigation-workbench",
+    "workspace": {
+      "scroll": 375,
+      "width": 375
+    },
+    "library": {
+      "scroll": 375,
+      "width": 375
+    },
+    "usable": true
+  },
+  "installed_wheel": {
+    "repository": "fraud-investigation-workbench",
+    "status": "passed",
+    "project_id": "fraud_investigation_workbench",
+    "wheel_bytes": 6445664,
+    "wheel_file": "fraud_investigation_workbench-2.0.0-py3-none-any.whl",
+    "installed_cli": true,
+    "default_run": true,
+    "explicit_run": true,
+    "outside_checkout_build": true,
+    "packaged_application_source": true,
+    "fixture_count": 2,
+    "expected_fixture_count": 2,
+    "examples": 4,
+    "missing_runtime_assets": [],
+    "seconds": 2.932,
+    "wheel_sha256": "d3429330f2283a548dc7233f21edd5265fe23d03333c8c82be55cc3a25197a8c",
+    "vendor_manifest_hashes_verified": 8,
+    "source_fixture_inventory_complete": true,
+    "personal_author_metadata_absent": true,
+    "pyproject_sha256": "46d12e8d82b11b97602c01e1aa13b732bf9620d79a7a8a3550c72c8d0c7cf335",
+    "container_definition_sha256": "c205c738978ce7cecb779e14d604b3736429be760747f5880abcbf2d099c4e6b",
+    "compose_definition_sha256": "32c8bb3ab89a30043978d12874cb8c91001fcb762269765ace46fe46265faf91",
+    "docker_runtime_verified": false
+  },
+  "source_sha256": "a7df36e28f321b36685e21b81a943a55b2b7dd15e95b45adc940943f67ae1296"
+}

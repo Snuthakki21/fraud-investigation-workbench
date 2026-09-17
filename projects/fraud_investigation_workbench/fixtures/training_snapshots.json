@@ -1,0 +1,962 @@
+[
+  {
+    "id": "history-001",
+    "observed_at": "2026-01-01T00:00:00+00:00",
+    "features": {
+      "velocity": 8,
+      "fan_in": 2,
+      "fan_out": 3,
+      "pass_through": 1.191,
+      "cycle_count": 2
+    },
+    "label": true
+  },
+  {
+    "id": "history-002",
+    "observed_at": "2026-01-02T00:00:00+00:00",
+    "features": {
+      "velocity": 4,
+      "fan_in": 2,
+      "fan_out": 5,
+      "pass_through": 0.383,
+      "cycle_count": 0
+    },
+    "label": false
+  },
+  {
+    "id": "history-003",
+    "observed_at": "2026-01-03T00:00:00+00:00",
+    "features": {
+      "velocity": 3,
+      "fan_in": 5,
+      "fan_out": 5,
+      "pass_through": 1.498,
+      "cycle_count": 3
+    },
+    "label": false
+  },
+  {
+    "id": "history-004",
+    "observed_at": "2026-01-04T00:00:00+00:00",
+    "features": {
+      "velocity": 11,
+      "fan_in": 1,
+      "fan_out": 7,
+      "pass_through": 0.96,
+      "cycle_count": 1
+    },
+    "label": true
+  },
+  {
+    "id": "history-005",
+    "observed_at": "2026-01-05T00:00:00+00:00",
+    "features": {
+      "velocity": 8,
+      "fan_in": 0,
+      "fan_out": 5,
+      "pass_through": 1.571,
+      "cycle_count": 2
+    },
+    "label": true
+  },
+  {
+    "id": "history-006",
+    "observed_at": "2026-01-06T00:00:00+00:00",
+    "features": {
+      "velocity": 9,
+      "fan_in": 2,
+      "fan_out": 4,
+      "pass_through": 0.662,
+      "cycle_count": 1
+    },
+    "label": true
+  },
+  {
+    "id": "history-007",
+    "observed_at": "2026-01-07T00:00:00+00:00",
+    "features": {
+      "velocity": 1,
+      "fan_in": 4,
+      "fan_out": 6,
+      "pass_through": 0.357,
+      "cycle_count": 3
+    },
+    "label": true
+  },
+  {
+    "id": "history-008",
+    "observed_at": "2026-01-08T00:00:00+00:00",
+    "features": {
+      "velocity": 9,
+      "fan_in": 0,
+      "fan_out": 7,
+      "pass_through": 0.002,
+      "cycle_count": 1
+    },
+    "label": true
+  },
+  {
+    "id": "history-009",
+    "observed_at": "2026-01-09T00:00:00+00:00",
+    "features": {
+      "velocity": 1,
+      "fan_in": 8,
+      "fan_out": 6,
+      "pass_through": 0.144,
+      "cycle_count": 1
+    },
+    "label": true
+  },
+  {
+    "id": "history-010",
+    "observed_at": "2026-01-10T00:00:00+00:00",
+    "features": {
+      "velocity": 2,
+      "fan_in": 4,
+      "fan_out": 3,
+      "pass_through": 0.305,
+      "cycle_count": 3
+    },
+    "label": true
+  },
+  {
+    "id": "history-011",
+    "observed_at": "2026-01-11T00:00:00+00:00",
+    "features": {
+      "velocity": 2,
+      "fan_in": 1,
+      "fan_out": 2,
+      "pass_through": 0.802,
+      "cycle_count": 2
+    },
+    "label": false
+  },
+  {
+    "id": "history-012",
+    "observed_at": "2026-01-12T00:00:00+00:00",
+    "features": {
+      "velocity": 2,
+      "fan_in": 3,
+      "fan_out": 7,
+      "pass_through": 0.306,
+      "cycle_count": 3
+    },
+    "label": true
+  },
+  {
+    "id": "history-013",
+    "observed_at": "2026-01-13T00:00:00+00:00",
+    "features": {
+      "velocity": 10,
+      "fan_in": 3,
+      "fan_out": 7,
+      "pass_through": 0.33,
+      "cycle_count": 2
+    },
+    "label": false
+  },
+  {
+    "id": "history-014",
+    "observed_at": "2026-01-14T00:00:00+00:00",
+    "features": {
+      "velocity": 2,
+      "fan_in": 1,
+      "fan_out": 2,
+      "pass_through": 0.402,
+      "cycle_count": 1
+    },
+    "label": false
+  },
+  {
+    "id": "history-015",
+    "observed_at": "2026-01-15T00:00:00+00:00",
+    "features": {
+      "velocity": 3,
+      "fan_in": 1,
+      "fan_out": 1,
+      "pass_through": 1.574,
+      "cycle_count": 2
+    },
+    "label": false
+  },
+  {
+    "id": "history-016",
+    "observed_at": "2026-01-16T00:00:00+00:00",
+    "features": {
+      "velocity": 8,
+      "fan_in": 4,
+      "fan_out": 0,
+      "pass_through": 0.117,
+      "cycle_count": 3
+    },
+    "label": true
+  },
+  {
+    "id": "history-017",
+    "observed_at": "2026-01-17T00:00:00+00:00",
+    "features": {
+      "velocity": 8,
+      "fan_in": 8,
+      "fan_out": 0,
+      "pass_through": 0.844,
+      "cycle_count": 3
+    },
+    "label": true
+  },
+  {
+    "id": "history-018",
+    "observed_at": "2026-01-18T00:00:00+00:00",
+    "features": {
+      "velocity": 9,
+      "fan_in": 8,
+      "fan_out": 1,
+      "pass_through": 0.719,
+      "cycle_count": 0
+    },
+    "label": true
+  },
+  {
+    "id": "history-019",
+    "observed_at": "2026-01-19T00:00:00+00:00",
+    "features": {
+      "velocity": 4,
+      "fan_in": 3,
+      "fan_out": 3,
+      "pass_through": 0.493,
+      "cycle_count": 1
+    },
+    "label": true
+  },
+  {
+    "id": "history-020",
+    "observed_at": "2026-01-20T00:00:00+00:00",
+    "features": {
+      "velocity": 12,
+      "fan_in": 1,
+      "fan_out": 1,
+      "pass_through": 0.561,
+      "cycle_count": 0
+    },
+    "label": false
+  },
+  {
+    "id": "history-021",
+    "observed_at": "2026-01-21T00:00:00+00:00",
+    "features": {
+      "velocity": 3,
+      "fan_in": 3,
+      "fan_out": 5,
+      "pass_through": 0.98,
+      "cycle_count": 3
+    },
+    "label": false
+  },
+  {
+    "id": "history-022",
+    "observed_at": "2026-01-22T00:00:00+00:00",
+    "features": {
+      "velocity": 1,
+      "fan_in": 2,
+      "fan_out": 2,
+      "pass_through": 0.808,
+      "cycle_count": 0
+    },
+    "label": false
+  },
+  {
+    "id": "history-023",
+    "observed_at": "2026-01-23T00:00:00+00:00",
+    "features": {
+      "velocity": 7,
+      "fan_in": 4,
+      "fan_out": 6,
+      "pass_through": 1.294,
+      "cycle_count": 1
+    },
+    "label": true
+  },
+  {
+    "id": "history-024",
+    "observed_at": "2026-01-24T00:00:00+00:00",
+    "features": {
+      "velocity": 3,
+      "fan_in": 3,
+      "fan_out": 0,
+      "pass_through": 0.229,
+      "cycle_count": 3
+    },
+    "label": false
+  },
+  {
+    "id": "history-025",
+    "observed_at": "2026-01-25T00:00:00+00:00",
+    "features": {
+      "velocity": 11,
+      "fan_in": 1,
+      "fan_out": 6,
+      "pass_through": 0.808,
+      "cycle_count": 3
+    },
+    "label": true
+  },
+  {
+    "id": "history-026",
+    "observed_at": "2026-01-26T00:00:00+00:00",
+    "features": {
+      "velocity": 6,
+      "fan_in": 0,
+      "fan_out": 6,
+      "pass_through": 1.432,
+      "cycle_count": 0
+    },
+    "label": false
+  },
+  {
+    "id": "history-027",
+    "observed_at": "2026-01-27T00:00:00+00:00",
+    "features": {
+      "velocity": 6,
+      "fan_in": 4,
+      "fan_out": 3,
+      "pass_through": 0.192,
+      "cycle_count": 3
+    },
+    "label": false
+  },
+  {
+    "id": "history-028",
+    "observed_at": "2026-01-28T00:00:00+00:00",
+    "features": {
+      "velocity": 3,
+      "fan_in": 8,
+      "fan_out": 5,
+      "pass_through": 1.208,
+      "cycle_count": 3
+    },
+    "label": true
+  },
+  {
+    "id": "history-029",
+    "observed_at": "2026-01-29T00:00:00+00:00",
+    "features": {
+      "velocity": 3,
+      "fan_in": 3,
+      "fan_out": 4,
+      "pass_through": 1.524,
+      "cycle_count": 0
+    },
+    "label": false
+  },
+  {
+    "id": "history-030",
+    "observed_at": "2026-01-30T00:00:00+00:00",
+    "features": {
+      "velocity": 4,
+      "fan_in": 7,
+      "fan_out": 7,
+      "pass_through": 1.423,
+      "cycle_count": 1
+    },
+    "label": false
+  },
+  {
+    "id": "history-031",
+    "observed_at": "2026-01-31T00:00:00+00:00",
+    "features": {
+      "velocity": 2,
+      "fan_in": 5,
+      "fan_out": 7,
+      "pass_through": 0.796,
+      "cycle_count": 3
+    },
+    "label": true
+  },
+  {
+    "id": "history-032",
+    "observed_at": "2026-02-01T00:00:00+00:00",
+    "features": {
+      "velocity": 9,
+      "fan_in": 5,
+      "fan_out": 2,
+      "pass_through": 0.568,
+      "cycle_count": 0
+    },
+    "label": true
+  },
+  {
+    "id": "history-033",
+    "observed_at": "2026-02-02T00:00:00+00:00",
+    "features": {
+      "velocity": 8,
+      "fan_in": 0,
+      "fan_out": 7,
+      "pass_through": 0.935,
+      "cycle_count": 0
+    },
+    "label": true
+  },
+  {
+    "id": "history-034",
+    "observed_at": "2026-02-03T00:00:00+00:00",
+    "features": {
+      "velocity": 6,
+      "fan_in": 0,
+      "fan_out": 4,
+      "pass_through": 1.483,
+      "cycle_count": 3
+    },
+    "label": true
+  },
+  {
+    "id": "history-035",
+    "observed_at": "2026-02-04T00:00:00+00:00",
+    "features": {
+      "velocity": 10,
+      "fan_in": 3,
+      "fan_out": 3,
+      "pass_through": 1.302,
+      "cycle_count": 2
+    },
+    "label": true
+  },
+  {
+    "id": "history-036",
+    "observed_at": "2026-02-05T00:00:00+00:00",
+    "features": {
+      "velocity": 6,
+      "fan_in": 6,
+      "fan_out": 0,
+      "pass_through": 1.452,
+      "cycle_count": 0
+    },
+    "label": false
+  },
+  {
+    "id": "history-037",
+    "observed_at": "2026-02-06T00:00:00+00:00",
+    "features": {
+      "velocity": 10,
+      "fan_in": 4,
+      "fan_out": 2,
+      "pass_through": 0.801,
+      "cycle_count": 3
+    },
+    "label": true
+  },
+  {
+    "id": "history-038",
+    "observed_at": "2026-02-07T00:00:00+00:00",
+    "features": {
+      "velocity": 3,
+      "fan_in": 4,
+      "fan_out": 4,
+      "pass_through": 0.53,
+      "cycle_count": 1
+    },
+    "label": true
+  },
+  {
+    "id": "history-039",
+    "observed_at": "2026-02-08T00:00:00+00:00",
+    "features": {
+      "velocity": 3,
+      "fan_in": 1,
+      "fan_out": 1,
+      "pass_through": 0.607,
+      "cycle_count": 1
+    },
+    "label": false
+  },
+  {
+    "id": "history-040",
+    "observed_at": "2026-02-09T00:00:00+00:00",
+    "features": {
+      "velocity": 4,
+      "fan_in": 4,
+      "fan_out": 4,
+      "pass_through": 1.551,
+      "cycle_count": 3
+    },
+    "label": true
+  },
+  {
+    "id": "history-041",
+    "observed_at": "2026-02-10T00:00:00+00:00",
+    "features": {
+      "velocity": 0,
+      "fan_in": 4,
+      "fan_out": 2,
+      "pass_through": 0.753,
+      "cycle_count": 2
+    },
+    "label": true
+  },
+  {
+    "id": "history-042",
+    "observed_at": "2026-02-11T00:00:00+00:00",
+    "features": {
+      "velocity": 10,
+      "fan_in": 2,
+      "fan_out": 2,
+      "pass_through": 0.818,
+      "cycle_count": 0
+    },
+    "label": true
+  },
+  {
+    "id": "history-043",
+    "observed_at": "2026-02-12T00:00:00+00:00",
+    "features": {
+      "velocity": 10,
+      "fan_in": 7,
+      "fan_out": 7,
+      "pass_through": 1.5,
+      "cycle_count": 2
+    },
+    "label": true
+  },
+  {
+    "id": "history-044",
+    "observed_at": "2026-02-13T00:00:00+00:00",
+    "features": {
+      "velocity": 4,
+      "fan_in": 6,
+      "fan_out": 3,
+      "pass_through": 1.029,
+      "cycle_count": 2
+    },
+    "label": true
+  },
+  {
+    "id": "history-045",
+    "observed_at": "2026-02-14T00:00:00+00:00",
+    "features": {
+      "velocity": 6,
+      "fan_in": 5,
+      "fan_out": 1,
+      "pass_through": 1.126,
+      "cycle_count": 0
+    },
+    "label": true
+  },
+  {
+    "id": "history-046",
+    "observed_at": "2026-02-15T00:00:00+00:00",
+    "features": {
+      "velocity": 6,
+      "fan_in": 6,
+      "fan_out": 2,
+      "pass_through": 0.635,
+      "cycle_count": 2
+    },
+    "label": true
+  },
+  {
+    "id": "history-047",
+    "observed_at": "2026-02-16T00:00:00+00:00",
+    "features": {
+      "velocity": 8,
+      "fan_in": 2,
+      "fan_out": 6,
+      "pass_through": 0.84,
+      "cycle_count": 3
+    },
+    "label": true
+  },
+  {
+    "id": "history-048",
+    "observed_at": "2026-02-17T00:00:00+00:00",
+    "features": {
+      "velocity": 2,
+      "fan_in": 7,
+      "fan_out": 5,
+      "pass_through": 0.232,
+      "cycle_count": 0
+    },
+    "label": false
+  },
+  {
+    "id": "history-049",
+    "observed_at": "2026-02-18T00:00:00+00:00",
+    "features": {
+      "velocity": 6,
+      "fan_in": 1,
+      "fan_out": 7,
+      "pass_through": 1.275,
+      "cycle_count": 2
+    },
+    "label": false
+  },
+  {
+    "id": "history-050",
+    "observed_at": "2026-02-19T00:00:00+00:00",
+    "features": {
+      "velocity": 8,
+      "fan_in": 0,
+      "fan_out": 2,
+      "pass_through": 0.35,
+      "cycle_count": 1
+    },
+    "label": true
+  },
+  {
+    "id": "history-051",
+    "observed_at": "2026-02-20T00:00:00+00:00",
+    "features": {
+      "velocity": 4,
+      "fan_in": 3,
+      "fan_out": 6,
+      "pass_through": 0.033,
+      "cycle_count": 2
+    },
+    "label": true
+  },
+  {
+    "id": "history-052",
+    "observed_at": "2026-02-21T00:00:00+00:00",
+    "features": {
+      "velocity": 1,
+      "fan_in": 3,
+      "fan_out": 7,
+      "pass_through": 1.357,
+      "cycle_count": 1
+    },
+    "label": false
+  },
+  {
+    "id": "history-053",
+    "observed_at": "2026-02-22T00:00:00+00:00",
+    "features": {
+      "velocity": 2,
+      "fan_in": 6,
+      "fan_out": 1,
+      "pass_through": 1.165,
+      "cycle_count": 2
+    },
+    "label": true
+  },
+  {
+    "id": "history-054",
+    "observed_at": "2026-02-23T00:00:00+00:00",
+    "features": {
+      "velocity": 1,
+      "fan_in": 5,
+      "fan_out": 5,
+      "pass_through": 1.553,
+      "cycle_count": 0
+    },
+    "label": false
+  },
+  {
+    "id": "history-055",
+    "observed_at": "2026-02-24T00:00:00+00:00",
+    "features": {
+      "velocity": 7,
+      "fan_in": 7,
+      "fan_out": 3,
+      "pass_through": 1.298,
+      "cycle_count": 2
+    },
+    "label": true
+  },
+  {
+    "id": "history-056",
+    "observed_at": "2026-02-25T00:00:00+00:00",
+    "features": {
+      "velocity": 5,
+      "fan_in": 8,
+      "fan_out": 3,
+      "pass_through": 1.23,
+      "cycle_count": 1
+    },
+    "label": true
+  },
+  {
+    "id": "history-057",
+    "observed_at": "2026-02-26T00:00:00+00:00",
+    "features": {
+      "velocity": 6,
+      "fan_in": 7,
+      "fan_out": 2,
+      "pass_through": 0.063,
+      "cycle_count": 1
+    },
+    "label": true
+  },
+  {
+    "id": "history-058",
+    "observed_at": "2026-02-27T00:00:00+00:00",
+    "features": {
+      "velocity": 11,
+      "fan_in": 8,
+      "fan_out": 0,
+      "pass_through": 0.639,
+      "cycle_count": 1
+    },
+    "label": true
+  },
+  {
+    "id": "history-059",
+    "observed_at": "2026-02-28T00:00:00+00:00",
+    "features": {
+      "velocity": 3,
+      "fan_in": 0,
+      "fan_out": 4,
+      "pass_through": 0.367,
+      "cycle_count": 3
+    },
+    "label": false
+  },
+  {
+    "id": "history-060",
+    "observed_at": "2026-03-01T00:00:00+00:00",
+    "features": {
+      "velocity": 7,
+      "fan_in": 1,
+      "fan_out": 6,
+      "pass_through": 1.245,
+      "cycle_count": 1
+    },
+    "label": false
+  },
+  {
+    "id": "history-061",
+    "observed_at": "2026-03-02T00:00:00+00:00",
+    "features": {
+      "velocity": 12,
+      "fan_in": 2,
+      "fan_out": 0,
+      "pass_through": 0.382,
+      "cycle_count": 1
+    },
+    "label": true
+  },
+  {
+    "id": "history-062",
+    "observed_at": "2026-03-03T00:00:00+00:00",
+    "features": {
+      "velocity": 9,
+      "fan_in": 4,
+      "fan_out": 3,
+      "pass_through": 1.498,
+      "cycle_count": 2
+    },
+    "label": true
+  },
+  {
+    "id": "history-063",
+    "observed_at": "2026-03-04T00:00:00+00:00",
+    "features": {
+      "velocity": 3,
+      "fan_in": 2,
+      "fan_out": 2,
+      "pass_through": 0.397,
+      "cycle_count": 2
+    },
+    "label": false
+  },
+  {
+    "id": "history-064",
+    "observed_at": "2026-03-05T00:00:00+00:00",
+    "features": {
+      "velocity": 0,
+      "fan_in": 1,
+      "fan_out": 6,
+      "pass_through": 0.172,
+      "cycle_count": 2
+    },
+    "label": false
+  },
+  {
+    "id": "history-065",
+    "observed_at": "2026-03-06T00:00:00+00:00",
+    "features": {
+      "velocity": 10,
+      "fan_in": 8,
+      "fan_out": 2,
+      "pass_through": 0.744,
+      "cycle_count": 3
+    },
+    "label": true
+  },
+  {
+    "id": "history-066",
+    "observed_at": "2026-03-07T00:00:00+00:00",
+    "features": {
+      "velocity": 8,
+      "fan_in": 2,
+      "fan_out": 4,
+      "pass_through": 1.21,
+      "cycle_count": 2
+    },
+    "label": false
+  },
+  {
+    "id": "history-067",
+    "observed_at": "2026-03-08T00:00:00+00:00",
+    "features": {
+      "velocity": 5,
+      "fan_in": 3,
+      "fan_out": 7,
+      "pass_through": 0.519,
+      "cycle_count": 0
+    },
+    "label": true
+  },
+  {
+    "id": "history-068",
+    "observed_at": "2026-03-09T00:00:00+00:00",
+    "features": {
+      "velocity": 7,
+      "fan_in": 3,
+      "fan_out": 5,
+      "pass_through": 1.121,
+      "cycle_count": 2
+    },
+    "label": false
+  },
+  {
+    "id": "history-069",
+    "observed_at": "2026-03-10T00:00:00+00:00",
+    "features": {
+      "velocity": 0,
+      "fan_in": 8,
+      "fan_out": 0,
+      "pass_through": 0.405,
+      "cycle_count": 2
+    },
+    "label": false
+  },
+  {
+    "id": "history-070",
+    "observed_at": "2026-03-11T00:00:00+00:00",
+    "features": {
+      "velocity": 2,
+      "fan_in": 4,
+      "fan_out": 1,
+      "pass_through": 1.183,
+      "cycle_count": 3
+    },
+    "label": true
+  },
+  {
+    "id": "history-071",
+    "observed_at": "2026-03-12T00:00:00+00:00",
+    "features": {
+      "velocity": 11,
+      "fan_in": 3,
+      "fan_out": 2,
+      "pass_through": 0.978,
+      "cycle_count": 0
+    },
+    "label": true
+  },
+  {
+    "id": "history-072",
+    "observed_at": "2026-03-13T00:00:00+00:00",
+    "features": {
+      "velocity": 8,
+      "fan_in": 3,
+      "fan_out": 6,
+      "pass_through": 1.222,
+      "cycle_count": 3
+    },
+    "label": true
+  },
+  {
+    "id": "history-073",
+    "observed_at": "2026-03-14T00:00:00+00:00",
+    "features": {
+      "velocity": 0,
+      "fan_in": 2,
+      "fan_out": 1,
+      "pass_through": 0.069,
+      "cycle_count": 2
+    },
+    "label": false
+  },
+  {
+    "id": "history-074",
+    "observed_at": "2026-03-15T00:00:00+00:00",
+    "features": {
+      "velocity": 8,
+      "fan_in": 8,
+      "fan_out": 5,
+      "pass_through": 1.569,
+      "cycle_count": 0
+    },
+    "label": true
+  },
+  {
+    "id": "history-075",
+    "observed_at": "2026-03-16T00:00:00+00:00",
+    "features": {
+      "velocity": 4,
+      "fan_in": 3,
+      "fan_out": 4,
+      "pass_through": 0.315,
+      "cycle_count": 2
+    },
+    "label": false
+  },
+  {
+    "id": "history-076",
+    "observed_at": "2026-03-17T00:00:00+00:00",
+    "features": {
+      "velocity": 5,
+      "fan_in": 3,
+      "fan_out": 2,
+      "pass_through": 0.07,
+      "cycle_count": 0
+    },
+    "label": false
+  },
+  {
+    "id": "history-077",
+    "observed_at": "2026-03-18T00:00:00+00:00",
+    "features": {
+      "velocity": 10,
+      "fan_in": 0,
+      "fan_out": 2,
+      "pass_through": 1.03,
+      "cycle_count": 2
+    },
+    "label": true
+  },
+  {
+    "id": "history-078",
+    "observed_at": "2026-03-19T00:00:00+00:00",
+    "features": {
+      "velocity": 10,
+      "fan_in": 3,
+      "fan_out": 1,
+      "pass_through": 0.045,
+      "cycle_count": 0
+    },
+    "label": false
+  },
+  {
+    "id": "history-079",
+    "observed_at": "2026-03-20T00:00:00+00:00",
+    "features": {
+      "velocity": 9,
+      "fan_in": 3,
+      "fan_out": 0,
+      "pass_through": 0.773,
+      "cycle_count": 3
+    },
+    "label": true
+  },
+  {
+    "id": "history-080",
+    "observed_at": "2026-03-21T00:00:00+00:00",
+    "features": {
+      "velocity": 9,
+      "fan_in": 6,
+      "fan_out": 0,
+      "pass_through": 0.937,
+      "cycle_count": 0
+    },
+    "label": false
+  }
+]
